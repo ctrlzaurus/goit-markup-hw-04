@@ -469,17 +469,26 @@ ul {
     border: 1px solid var(--clients-boxes);
     color: var(--clients-boxes);
 }
+
 .client-link:hover,
 .client-link:focus {
     border-color: var(--accent-color);
 }
 .client-icon {
-    fill: currentColor;
+    fill: var(--clients-boxes);
 }
+
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+    fill: var(--accent-color);
+}
+
+/*
 .client-icon:hover,
 .client-icon:focus {
     fill: var(--accent-color);
 }
+*/
 
 /* works */ 
 
